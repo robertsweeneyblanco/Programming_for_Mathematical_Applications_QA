@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>DifferentialEquations Package</title>
-  <meta name="description" content="        The DifferentialEquations Package Various ODE solvers are implemented in the excellent DifferentialEquations package. They are similar to our euler a...">
+  <meta name="description" content="            The DifferentialEquations Package Various ODE solvers are implemented in the excellent DifferentialEquations package. They are similar to our eul...">
 
   <link rel="canonical" href="http://0.0.0.0:4000//Differential_Equations/DifferentialEquations_Package.html">
   <link rel="alternate" type="application/rss+xml" title="Programming for Mathematical Applications" href="http://0.0.0.0:4000//feed.xml">
@@ -14,7 +14,7 @@
   <meta property="og:url"         content="http://0.0.0.0:4000//Differential_Equations/DifferentialEquations_Package.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="DifferentialEquations Package" />
-<meta property="og:description" content="        The DifferentialEquations Package Various ODE solvers are implemented in the excellent DifferentialEquations package. They are similar to our euler a..." />
+<meta property="og:description" content="            The DifferentialEquations Package Various ODE solvers are implemented in the excellent DifferentialEquations package. They are similar to our eul..." />
 <meta property="og:image"       content="http://0.0.0.0:4000/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -26,9 +26,9 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "http://0.0.0.0:4000//Differential_Equations/DifferentialEquations_Package.html",
   "headline": "DifferentialEquations Package",
-  "datePublished": "2021-01-18T16:42:37-06:00",
-  "dateModified": "2021-01-18T16:42:37-06:00",
-  "description": "        The DifferentialEquations Package Various ODE solvers are implemented in the excellent DifferentialEquations package. They are similar to our euler a...",
+  "datePublished": "2021-01-18T21:06:17-06:00",
+  "dateModified": "2021-01-18T21:06:17-06:00",
+  "description": "            The DifferentialEquations Package Various ODE solvers are implemented in the excellent DifferentialEquations package. They are similar to our eul...",
   "author": {
     "@type": "Person",
     "name": "Per-Olof Persson and Robert Sweeney Blanco"
@@ -425,7 +425,7 @@ initFunction(initPrint)
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://robertsweeneyblanco.github.io/Programming_for_Mathematical_Applications/home.html"><img src="/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
+  <a href="https://robertsweeneyblanco.github.io/Programming_for_Mathematical_Applications_QA/home.html"><img src="/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
   <h2 class="c-sidebar__title">Programming for Mathematical Applications</h2>
   <ul class="c-sidebar__chapters">
     
@@ -1890,7 +1890,7 @@ initFunction(initPrint)
 
 
 
-<a href="https://julia.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/robertsweeneyblanco/Programming_for_Mathematical_Applications&amp;branch=master&amp;subPath=content%2FDifferential_Equations%2FDifferentialEquations_Package.ipynb&amp;app=notebook"><button class="interact-button" id="interact-button-jupyterhub"><img class="interact-button-logo" src="/assets/images/logo_jupyterhub.svg" alt="Interact" />JupyterHub</button></a>
+<a href="https://julia.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/robertsweeneyblanco/Programming_for_Mathematical_Applications_QA&amp;branch=master&amp;subPath=content%2FDifferential_Equations%2FDifferentialEquations_Package.ipynb&amp;app=notebook"><button class="interact-button" id="interact-button-jupyterhub"><img class="interact-button-logo" src="/assets/images/logo_jupyterhub.svg" alt="Interact" />JupyterHub</button></a>
 
 
 
@@ -1912,6 +1912,7 @@ initFunction(initPrint)
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
                   <main class="jupyter-page">
+    <div id="page-info"></div>
     <div class="jb_cell">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
@@ -1934,6 +1935,44 @@ initFunction(initPrint)
 </div>
 </div>
 
+<div class="jb_cell tag_hide_input tag_hide_output">
+
+<div class="cell border-box-sizing code_cell rendered tag_hide_input tag_hide_output">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">Pkg</span><span class="p">;</span> <span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">&quot;DifferentialEquations&quot;</span><span class="p">)</span> <span class="c"># in case the package is not already installed</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-green-intense-fg ansi-bold">  Updating</span> registry at `~/.julia/registries/General`
+<span class="ansi-green-intense-fg ansi-bold">  Updating</span> git-repo `https://github.com/JuliaRegistries/General.git`
+<span class="ansi-green-intense-fg ansi-bold"> Resolving</span> package versions...
+<span class="ansi-green-intense-fg ansi-bold">  Updating</span> `~/.julia/environments/v1.3/Project.toml`
+<span class="ansi-black-intense-fg"> [no changes]</span>
+<span class="ansi-green-intense-fg ansi-bold">  Updating</span> `~/.julia/environments/v1.3/Manifest.toml`
+<span class="ansi-black-intense-fg"> [no changes]</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
 <div class="jb_cell">
 
 <div class="cell border-box-sizing code_cell rendered">
@@ -1953,6 +1992,16 @@ initFunction(initPrint)
 <div class="output_wrapper">
 <div class="output">
 
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>┌ Info: Precompiling DifferentialEquations [0c46a032-eb83-5123-abaf-570d42b7fbaa]
+└ @ Base loading.jl:1273
+</pre>
+</div>
+</div>
+</div>
 <div class="jb_output_wrapper }}">
 <div class="output_area">
 
@@ -2153,7 +2202,7 @@ initFunction(initPrint)
 
 
 <div class="output_png output_subarea ">
-<img src="../images/Differential_Equations/DifferentialEquations_Package_10_0.png"
+<img src="../images/Differential_Equations/DifferentialEquations_Package_11_0.png"
 >
 </div>
 
@@ -2323,14 +2372,14 @@ initFunction(initPrint)
   
     
     <a id="js-page__nav__prev" class="c-page__nav__prev" href="/Differential_Equations/Boundary_Value_Problems.html">
-      〈 <span class="u-margin-right-tiny"></span> Boundary Value Problems
+      〈 <span class="u-margin-right-tiny"></span> 
     </a>
   
 
   
     
     <a id="js-page__nav__next" class="c-page__nav__next" href="/Optimization/Chapter_Intro.html">
-      Optimization <span class="u-margin-right-tiny"></span> 〉
+       <span class="u-margin-right-tiny"></span> 〉
     </a>
   
 </nav>

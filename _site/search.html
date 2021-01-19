@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "http://0.0.0.0:4000//search",
   "headline": "Search the site",
-  "datePublished": "2021-01-18T16:42:37-06:00",
-  "dateModified": "2021-01-18T16:42:37-06:00",
+  "datePublished": "2021-01-18T21:06:17-06:00",
+  "dateModified": "2021-01-18T21:06:17-06:00",
   "description": "        ",
   "author": {
     "@type": "Person",
@@ -425,7 +425,7 @@ initFunction(initPrint)
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://robertsweeneyblanco.github.io/Programming_for_Mathematical_Applications/home.html"><img src="/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
+  <a href="https://robertsweeneyblanco.github.io/Programming_for_Mathematical_Applications_QA/home.html"><img src="/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
   <h2 class="c-sidebar__title">Programming for Mathematical Applications</h2>
   <ul class="c-sidebar__chapters">
     
@@ -1961,7 +1961,7 @@ initFunction(initPrint)
         "title": "Triangulations",
         
         "excerpt":
-            "Triangulations A triangulation of a polygon is a subdivision into triangles. This has numerous applications, for example in computer graphics, visualization, numerical solution of PDEs, and interpolation. First let us define a function to plot a triangulation. The function below is based on PyPlot, and it takes an array of points p and an array of triangle indices t. function tplot(p, t) # Plot triangular mesh with nodes `p` and triangles `t` tris = convert(Array{Int64}, hcat(t...)&#39;) tripcolor(first.(p), last.(p), tris .- 1, 0*tris[:,1], cmap=&quot;Set3&quot;, edgecolors=&quot;k&quot;, linewidth=1) axis(&quot;equal&quot;) return end tplot (generic function with 1 method) We can test the function using...",
+            "Triangulations A triangulation of a polygon is a subdivision into triangles. This has numerous applications, for example in computer graphics, visualization, numerical solution of PDEs, and interpolation. First let us define a function to plot a triangulation. The function below is based on PyPlot, and it takes an array of points p and an array of triangle indices t. using PyPlot function tplot(p, t) # Plot triangular mesh with nodes `p` and triangles `t` tris = convert(Array{Int64}, hcat(t...)&#39;) tripcolor(first.(p), last.(p), tris .- 1, 0*tris[:,1], cmap=&quot;Set3&quot;, edgecolors=&quot;k&quot;, linewidth=1) axis(&quot;equal&quot;) return end tplot (generic function with 1 method) We can test the...",
         "categories": [],
         "tags": [],
         "url": "http://0.0.0.0:4000/Computational_Geometry/Triangulations.html",

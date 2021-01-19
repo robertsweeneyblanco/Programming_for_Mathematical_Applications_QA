@@ -3,9 +3,11 @@ redirect_from:
   - "/graphs/graph-algorithms"
 interact_link: content/Graphs/Graph_Algorithms.ipynb
 kernel_name: julia-1.3
+kernel_path: content/Graphs
 has_widgets: false
 title: |-
   Graph Algorithms
+pagenum: 57
 prev_page:
   url: /Graphs/Graph_Basics.html
   title: |-
@@ -15,11 +17,13 @@ next_page:
   title: |-
     Sparse Matrices
 suffix: .ipynb
+search: path graph vertex breadth depth search dfs vertices method traversal used shortest finding using tree either given order between applications bfs nodes neighbor spanning edges algorithm start important array note also unweighted minimum cycle only any connected peer networks starting topological sorting keep track visited neighbors before elements function return current back u new grid source crawlers algorithms simply such easiest implemented traverse node next visits highly least previous simple application visit recursive not added after visiting below examples www geeksforgeeks org edge check z stack destination scheduling jobs dependencies formula test bipartite color same component strongly directed set very
 
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 
     <main class="jupyter-page">
+    <div id="page-info"></div>
     <div class="jb_cell">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
@@ -46,11 +50,43 @@ neighbor node, before continuing to the next neighbor - therefore the name
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># Import code from previous section</span>
+<span class="k">using</span> <span class="n">Pkg</span><span class="p">;</span> <span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">&quot;NBInclude&quot;</span><span class="p">)</span> <span class="c"># in case the package is not already installed</span>
 <span class="k">using</span> <span class="n">NBInclude</span>
 <span class="nd">@nbinclude</span><span class="p">(</span><span class="s">&quot;Graph_Code.ipynb&quot;</span><span class="p">);</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-green-intense-fg ansi-bold">  Updating</span> registry at `~/.julia/registries/General`
+<span class="ansi-green-intense-fg ansi-bold">  Updating</span> git-repo `https://github.com/JuliaRegistries/General.git`
+<span class="ansi-green-intense-fg ansi-bold"> Resolving</span> package versions...
+<span class="ansi-green-intense-fg ansi-bold">  Updating</span> `~/.julia/environments/v1.3/Project.toml`
+<span class="ansi-black-intense-fg"> [no changes]</span>
+<span class="ansi-green-intense-fg ansi-bold">  Updating</span> `~/.julia/environments/v1.3/Manifest.toml`
+<span class="ansi-black-intense-fg"> [no changes]</span>
+</pre>
+</div>
+</div>
+</div>
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>┌ Info: Precompiling NBInclude [0db19996-df87-5ea3-a455-e3a50d440464]
+└ @ Base loading.jl:1273
+</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -764,7 +800,7 @@ between vertices with admissible moves.</p>
 
 <div class="output_text output_subarea output_execute_result">
 <pre>1-element Array{PyCall.PyObject,1}:
- PyObject &lt;matplotlib.lines.Line2D object at 0x142dbe0d0&gt;</pre>
+ PyObject &lt;matplotlib.lines.Line2D object at 0x7fa0c3f7e1d0&gt;</pre>
 </div>
 
 </div>

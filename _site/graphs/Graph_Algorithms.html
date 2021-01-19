@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Graph Algorithms</title>
-  <meta name="description" content="        Graph Algorithms Depth first search The depth first search (DFS) is a simply way of traversing a graph, starting froma given vertex start. It can be ...">
+  <meta name="description" content="            Graph Algorithms Depth first search The depth first search (DFS) is a simply way of traversing a graph, starting froma given vertex start. It can...">
 
   <link rel="canonical" href="http://0.0.0.0:4000//Graphs/Graph_Algorithms.html">
   <link rel="alternate" type="application/rss+xml" title="Programming for Mathematical Applications" href="http://0.0.0.0:4000//feed.xml">
@@ -14,7 +14,7 @@
   <meta property="og:url"         content="http://0.0.0.0:4000//Graphs/Graph_Algorithms.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Graph Algorithms" />
-<meta property="og:description" content="        Graph Algorithms Depth first search The depth first search (DFS) is a simply way of traversing a graph, starting froma given vertex start. It can be ..." />
+<meta property="og:description" content="            Graph Algorithms Depth first search The depth first search (DFS) is a simply way of traversing a graph, starting froma given vertex start. It can..." />
 <meta property="og:image"       content="http://0.0.0.0:4000/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -26,9 +26,9 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "http://0.0.0.0:4000//Graphs/Graph_Algorithms.html",
   "headline": "Graph Algorithms",
-  "datePublished": "2021-01-18T16:42:37-06:00",
-  "dateModified": "2021-01-18T16:42:37-06:00",
-  "description": "        Graph Algorithms Depth first search The depth first search (DFS) is a simply way of traversing a graph, starting froma given vertex start. It can be ...",
+  "datePublished": "2021-01-18T21:06:17-06:00",
+  "dateModified": "2021-01-18T21:06:17-06:00",
+  "description": "            Graph Algorithms Depth first search The depth first search (DFS) is a simply way of traversing a graph, starting froma given vertex start. It can...",
   "author": {
     "@type": "Person",
     "name": "Per-Olof Persson and Robert Sweeney Blanco"
@@ -425,7 +425,7 @@ initFunction(initPrint)
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://robertsweeneyblanco.github.io/Programming_for_Mathematical_Applications/home.html"><img src="/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
+  <a href="https://robertsweeneyblanco.github.io/Programming_for_Mathematical_Applications_QA/home.html"><img src="/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
   <h2 class="c-sidebar__title">Programming for Mathematical Applications</h2>
   <ul class="c-sidebar__chapters">
     
@@ -1890,7 +1890,7 @@ initFunction(initPrint)
 
 
 
-<a href="https://julia.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/robertsweeneyblanco/Programming_for_Mathematical_Applications&amp;branch=master&amp;subPath=content%2FGraphs%2FGraph_Algorithms.ipynb&amp;app=notebook"><button class="interact-button" id="interact-button-jupyterhub"><img class="interact-button-logo" src="/assets/images/logo_jupyterhub.svg" alt="Interact" />JupyterHub</button></a>
+<a href="https://julia.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/robertsweeneyblanco/Programming_for_Mathematical_Applications_QA&amp;branch=master&amp;subPath=content%2FGraphs%2FGraph_Algorithms.ipynb&amp;app=notebook"><button class="interact-button" id="interact-button-jupyterhub"><img class="interact-button-logo" src="/assets/images/logo_jupyterhub.svg" alt="Interact" />JupyterHub</button></a>
 
 
 
@@ -1912,6 +1912,7 @@ initFunction(initPrint)
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
                   <main class="jupyter-page">
+    <div id="page-info"></div>
     <div class="jb_cell">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
@@ -1938,11 +1939,43 @@ neighbor node, before continuing to the next neighbor - therefore the name
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="c"># Import code from previous section</span>
+<span class="k">using</span> <span class="n">Pkg</span><span class="p">;</span> <span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">&quot;NBInclude&quot;</span><span class="p">)</span> <span class="c"># in case the package is not already installed</span>
 <span class="k">using</span> <span class="n">NBInclude</span>
 <span class="nd">@nbinclude</span><span class="p">(</span><span class="s">&quot;Graph_Code.ipynb&quot;</span><span class="p">);</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-green-intense-fg ansi-bold">  Updating</span> registry at `~/.julia/registries/General`
+<span class="ansi-green-intense-fg ansi-bold">  Updating</span> git-repo `https://github.com/JuliaRegistries/General.git`
+<span class="ansi-green-intense-fg ansi-bold"> Resolving</span> package versions...
+<span class="ansi-green-intense-fg ansi-bold">  Updating</span> `~/.julia/environments/v1.3/Project.toml`
+<span class="ansi-black-intense-fg"> [no changes]</span>
+<span class="ansi-green-intense-fg ansi-bold">  Updating</span> `~/.julia/environments/v1.3/Manifest.toml`
+<span class="ansi-black-intense-fg"> [no changes]</span>
+</pre>
+</div>
+</div>
+</div>
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>┌ Info: Precompiling NBInclude [0db19996-df87-5ea3-a455-e3a50d440464]
+└ @ Base loading.jl:1273
+</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -2656,7 +2689,7 @@ between vertices with admissible moves.</p>
 
 <div class="output_text output_subarea output_execute_result">
 <pre>1-element Array{PyCall.PyObject,1}:
- PyObject &lt;matplotlib.lines.Line2D object at 0x142dbe0d0&gt;</pre>
+ PyObject &lt;matplotlib.lines.Line2D object at 0x7fa0c3f7e1d0&gt;</pre>
 </div>
 
 </div>
@@ -2703,14 +2736,14 @@ examples (from <a href="https://www.geeksforgeeks.org/applications-of-breadth-fi
   
     
     <a id="js-page__nav__prev" class="c-page__nav__prev" href="/Graphs/Graph_Basics.html">
-      〈 <span class="u-margin-right-tiny"></span> Graph Basics
+      〈 <span class="u-margin-right-tiny"></span> 
     </a>
   
 
   
     
     <a id="js-page__nav__next" class="c-page__nav__next" href="/Sparse_Matrices/Chapter_Intro.html">
-      Sparse Matrices <span class="u-margin-right-tiny"></span> 〉
+       <span class="u-margin-right-tiny"></span> 〉
     </a>
   
 </nav>

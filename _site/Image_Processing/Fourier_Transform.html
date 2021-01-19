@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Fourier Transform</title>
-  <meta name="description" content="        The Fourier Transform The 2D discrete Fourier Transform decomposes a 2D array into a sum of complex exponentials:$$f(x,y) = \frac{1}{mn} \sum_{u=0}^{...">
+  <meta name="description" content="            The Fourier Transform The 2D discrete Fourier Transform decomposes a 2D array into a sum of complex exponentials:$$f(x,y) = \frac{1}{mn} \sum_{u=...">
 
   <link rel="canonical" href="http://0.0.0.0:4000//Image_Processing/Fourier_Transform.html">
   <link rel="alternate" type="application/rss+xml" title="Programming for Mathematical Applications" href="http://0.0.0.0:4000//feed.xml">
@@ -14,7 +14,7 @@
   <meta property="og:url"         content="http://0.0.0.0:4000//Image_Processing/Fourier_Transform.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Fourier Transform" />
-<meta property="og:description" content="        The Fourier Transform The 2D discrete Fourier Transform decomposes a 2D array into a sum of complex exponentials:$$f(x,y) = \frac{1}{mn} \sum_{u=0}^{..." />
+<meta property="og:description" content="            The Fourier Transform The 2D discrete Fourier Transform decomposes a 2D array into a sum of complex exponentials:$$f(x,y) = \frac{1}{mn} \sum_{u=..." />
 <meta property="og:image"       content="http://0.0.0.0:4000/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -26,9 +26,9 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "http://0.0.0.0:4000//Image_Processing/Fourier_Transform.html",
   "headline": "Fourier Transform",
-  "datePublished": "2021-01-18T16:42:37-06:00",
-  "dateModified": "2021-01-18T16:42:37-06:00",
-  "description": "        The Fourier Transform The 2D discrete Fourier Transform decomposes a 2D array into a sum of complex exponentials:$$f(x,y) = \frac{1}{mn} \sum_{u=0}^{...",
+  "datePublished": "2021-01-18T21:06:17-06:00",
+  "dateModified": "2021-01-18T21:06:17-06:00",
+  "description": "            The Fourier Transform The 2D discrete Fourier Transform decomposes a 2D array into a sum of complex exponentials:$$f(x,y) = \frac{1}{mn} \sum_{u=...",
   "author": {
     "@type": "Person",
     "name": "Per-Olof Persson and Robert Sweeney Blanco"
@@ -425,7 +425,7 @@ initFunction(initPrint)
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://robertsweeneyblanco.github.io/Programming_for_Mathematical_Applications/home.html"><img src="/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
+  <a href="https://robertsweeneyblanco.github.io/Programming_for_Mathematical_Applications_QA/home.html"><img src="/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
   <h2 class="c-sidebar__title">Programming for Mathematical Applications</h2>
   <ul class="c-sidebar__chapters">
     
@@ -1890,7 +1890,7 @@ initFunction(initPrint)
 
 
 
-<a href="https://julia.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/robertsweeneyblanco/Programming_for_Mathematical_Applications&amp;branch=master&amp;subPath=content%2FImage_Processing%2FFourier_Transform.ipynb&amp;app=notebook"><button class="interact-button" id="interact-button-jupyterhub"><img class="interact-button-logo" src="/assets/images/logo_jupyterhub.svg" alt="Interact" />JupyterHub</button></a>
+<a href="https://julia.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/robertsweeneyblanco/Programming_for_Mathematical_Applications_QA&amp;branch=master&amp;subPath=content%2FImage_Processing%2FFourier_Transform.ipynb&amp;app=notebook"><button class="interact-button" id="interact-button-jupyterhub"><img class="interact-button-logo" src="/assets/images/logo_jupyterhub.svg" alt="Interact" />JupyterHub</button></a>
 
 
 
@@ -1912,6 +1912,7 @@ initFunction(initPrint)
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
                   <main class="jupyter-page">
+    <div id="page-info"></div>
     <div class="jb_cell">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
@@ -1983,6 +1984,44 @@ $$<p>They are useful in image processing for performing fast filtering, compress
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">Pkg</span><span class="p">;</span> <span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">&quot;FFTW&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-green-intense-fg ansi-bold">  Updating</span> registry at `~/.julia/registries/General`
+<span class="ansi-green-intense-fg ansi-bold">  Updating</span> git-repo `https://github.com/JuliaRegistries/General.git`
+[1mFetching: [========================================&gt;]  100.0 %.0 %<span class="ansi-green-intense-fg ansi-bold"> Resolving</span> package versions...
+<span class="ansi-green-intense-fg ansi-bold">  Updating</span> `~/.julia/environments/v1.3/Project.toml`
+<span class="ansi-black-intense-fg"> [no changes]</span>
+<span class="ansi-green-intense-fg ansi-bold">  Updating</span> `~/.julia/environments/v1.3/Manifest.toml`
+<span class="ansi-black-intense-fg"> [no changes]</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">FFTW</span>
 
 <span class="k">function</span> <span class="n">imagefft_demo</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
@@ -2000,6 +2039,16 @@ $$<p>They are useful in image processing for performing fast filtering, compress
 <div class="output_wrapper">
 <div class="output">
 
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>┌ Info: Precompiling FFTW [7a1cc6ca-52ef-59f5-83cd-3a7055c09341]
+└ @ Base loading.jl:1273
+</pre>
+</div>
+</div>
+</div>
 <div class="jb_output_wrapper }}">
 <div class="output_area">
 
@@ -2041,7 +2090,7 @@ $$<p>They are useful in image processing for performing fast filtering, compress
 
 
 <div class="output_png output_subarea ">
-<img src="../images/Image_Processing/Fourier_Transform_4_0.png"
+<img src="../images/Image_Processing/Fourier_Transform_5_0.png"
 >
 </div>
 
@@ -2078,7 +2127,7 @@ $$<p>They are useful in image processing for performing fast filtering, compress
 
 
 <div class="output_png output_subarea ">
-<img src="../images/Image_Processing/Fourier_Transform_5_0.png"
+<img src="../images/Image_Processing/Fourier_Transform_6_0.png"
 >
 </div>
 
@@ -2114,7 +2163,7 @@ $$<p>They are useful in image processing for performing fast filtering, compress
 
 
 <div class="output_png output_subarea ">
-<img src="../images/Image_Processing/Fourier_Transform_6_0.png"
+<img src="../images/Image_Processing/Fourier_Transform_7_0.png"
 >
 </div>
 
@@ -2150,7 +2199,7 @@ $$<p>They are useful in image processing for performing fast filtering, compress
 
 
 <div class="output_png output_subarea ">
-<img src="../images/Image_Processing/Fourier_Transform_7_0.png"
+<img src="../images/Image_Processing/Fourier_Transform_8_0.png"
 >
 </div>
 
@@ -2196,7 +2245,7 @@ $$<p>They are useful in image processing for performing fast filtering, compress
 
 
 <div class="output_png output_subarea ">
-<img src="../images/Image_Processing/Fourier_Transform_9_0.png"
+<img src="../images/Image_Processing/Fourier_Transform_10_0.png"
 >
 </div>
 
@@ -2244,7 +2293,7 @@ $$<p>They are useful in image processing for performing fast filtering, compress
 
 
 <div class="output_png output_subarea ">
-<img src="../images/Image_Processing/Fourier_Transform_11_0.png"
+<img src="../images/Image_Processing/Fourier_Transform_12_0.png"
 >
 </div>
 
@@ -2297,7 +2346,7 @@ $$<p>They are useful in image processing for performing fast filtering, compress
 
 
 <div class="output_png output_subarea ">
-<img src="../images/Image_Processing/Fourier_Transform_13_0.png"
+<img src="../images/Image_Processing/Fourier_Transform_14_0.png"
 >
 </div>
 
@@ -2320,14 +2369,14 @@ $$<p>They are useful in image processing for performing fast filtering, compress
   
     
     <a id="js-page__nav__prev" class="c-page__nav__prev" href="/Image_Processing/Filtering.html">
-      〈 <span class="u-margin-right-tiny"></span> Filtering
+      〈 <span class="u-margin-right-tiny"></span> 
     </a>
   
 
   
     
     <a id="js-page__nav__next" class="c-page__nav__next" href="/Differential_Equations/Chapter_Intro.html">
-      Differential Equations <span class="u-margin-right-tiny"></span> 〉
+       <span class="u-margin-right-tiny"></span> 〉
     </a>
   
 </nav>
