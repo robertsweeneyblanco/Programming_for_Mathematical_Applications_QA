@@ -26,8 +26,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "http://0.0.0.0:4000//Graphs/Graph_Algorithms.html",
   "headline": "Graph Algorithms",
-  "datePublished": "2021-01-18T21:06:17-06:00",
-  "dateModified": "2021-01-18T21:06:17-06:00",
+  "datePublished": "2021-01-18T22:13:27-06:00",
+  "dateModified": "2021-01-18T22:13:27-06:00",
   "description": "            Graph Algorithms Depth first search The depth first search (DFS) is a simply way of traversing a graph, starting froma given vertex start. It can...",
   "author": {
     "@type": "Person",
@@ -1938,44 +1938,30 @@ neighbor node, before continuing to the next neighbor - therefore the name
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="c"># Import code from previous section</span>
-<span class="k">using</span> <span class="n">Pkg</span><span class="p">;</span> <span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">&quot;NBInclude&quot;</span><span class="p">)</span> <span class="c"># in case the package is not already installed</span>
-<span class="k">using</span> <span class="n">NBInclude</span>
-<span class="nd">@nbinclude</span><span class="p">(</span><span class="s">&quot;Graph_Code.ipynb&quot;</span><span class="p">);</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># Uncomment below if the package is not already installed</span>
+<span class="c">#using Pkg; Pkg.add(&quot;NBInclude&quot;)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
+</div>
+</div>
 
-<div class="jb_output_wrapper }}">
-<div class="output_area">
+<div class="jb_cell tag_hide_input tag_hide_output">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">  Updating</span> registry at `~/.julia/registries/General`
-<span class="ansi-green-intense-fg ansi-bold">  Updating</span> git-repo `https://github.com/JuliaRegistries/General.git`
-<span class="ansi-green-intense-fg ansi-bold"> Resolving</span> package versions...
-<span class="ansi-green-intense-fg ansi-bold">  Updating</span> `~/.julia/environments/v1.3/Project.toml`
-<span class="ansi-black-intense-fg"> [no changes]</span>
-<span class="ansi-green-intense-fg ansi-bold">  Updating</span> `~/.julia/environments/v1.3/Manifest.toml`
-<span class="ansi-black-intense-fg"> [no changes]</span>
-</pre>
-</div>
-</div>
-</div>
-<div class="jb_output_wrapper }}">
-<div class="output_area">
+<div class="cell border-box-sizing code_cell rendered tag_hide_input tag_hide_output">
+<div class="input">
 
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>┌ Info: Precompiling NBInclude [0db19996-df87-5ea3-a455-e3a50d440464]
-└ @ Base loading.jl:1273
-</pre>
-</div>
-</div>
-</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># Import code from previous section</span>
+<span class="k">using</span> <span class="n">NBInclude</span>
+<span class="nd">@nbinclude</span><span class="p">(</span><span class="s">&quot;Graph_Code.ipynb&quot;</span><span class="p">);</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -2065,7 +2051,7 @@ is arbitrary (at least the way we designed it). We will continue to use the grap
 
 
 <div class="output_png output_subarea ">
-<img src="../images/Graphs/Graph_Algorithms_4_0.png"
+<img src="../images/Graphs/Graph_Algorithms_5_0.png"
 >
 </div>
 
@@ -2275,7 +2261,7 @@ is in general not the shortest path between the vertices.</p>
 
 
 <div class="output_png output_subarea ">
-<img src="../images/Graphs/Graph_Algorithms_11_0.png"
+<img src="../images/Graphs/Graph_Algorithms_12_0.png"
 >
 </div>
 
@@ -2552,7 +2538,7 @@ back to the starting vertex, and build the path.</p>
 
 
 <div class="output_png output_subarea ">
-<img src="../images/Graphs/Graph_Algorithms_19_0.png"
+<img src="../images/Graphs/Graph_Algorithms_20_0.png"
 >
 </div>
 
@@ -2676,7 +2662,7 @@ between vertices with admissible moves.</p>
 
 
 <div class="output_png output_subarea ">
-<img src="../images/Graphs/Graph_Algorithms_23_0.png"
+<img src="../images/Graphs/Graph_Algorithms_24_0.png"
 >
 </div>
 
@@ -2689,7 +2675,7 @@ between vertices with admissible moves.</p>
 
 <div class="output_text output_subarea output_execute_result">
 <pre>1-element Array{PyCall.PyObject,1}:
- PyObject &lt;matplotlib.lines.Line2D object at 0x7fa0c3f7e1d0&gt;</pre>
+ PyObject &lt;matplotlib.lines.Line2D object at 0x7f9f6d4e6610&gt;</pre>
 </div>
 
 </div>

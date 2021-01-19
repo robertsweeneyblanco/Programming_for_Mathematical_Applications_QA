@@ -10,12 +10,8 @@ title: |-
 pagenum: 46
 prev_page:
   url: /Image_Processing/Filtering.html
-  title: |-
-    Filtering
 next_page:
   url: /Differential_Equations/Chapter_Intro.html
-  title: |-
-    Differential Equations
 suffix: .ipynb
 search: fourier sum frac transform f m n left right image noise x y u v coefficients periodic d exp pi xu yv processing general using made discrete decomposes array into complex exponentials mn where defined useful performing fast filtering compression detection features etc let us plot simple images patterns understood underlying expansion however pattern spectrum less clear expect relatively smooth decay away center though removing application remove below demonstrate example given frequency direction compute set known frequencies zero
 
@@ -88,38 +84,18 @@ $$<p>They are useful in image processing for performing fast filtering, compress
 </div>
 </div>
 
-<div class="jb_cell">
+<div class="jb_cell tag_hide_input tag_hide_output">
 
-<div class="cell border-box-sizing code_cell rendered">
+<div class="cell border-box-sizing code_cell rendered tag_hide_input tag_hide_output">
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-julia"><pre><span></span><span class="k">using</span> <span class="n">Pkg</span><span class="p">;</span> <span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">&quot;FFTW&quot;</span><span class="p">)</span>
+<div class=" highlight hl-julia"><pre><span></span><span class="c"># Uncomment below if the package is not already installed</span>
+<span class="c">#using Pkg; Pkg.add(&quot;FFTW&quot;)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="jb_output_wrapper }}">
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">  Updating</span> registry at `~/.julia/registries/General`
-<span class="ansi-green-intense-fg ansi-bold">  Updating</span> git-repo `https://github.com/JuliaRegistries/General.git`
-[1mFetching: [========================================&gt;]  100.0 %.0 %<span class="ansi-green-intense-fg ansi-bold"> Resolving</span> package versions...
-<span class="ansi-green-intense-fg ansi-bold">  Updating</span> `~/.julia/environments/v1.3/Project.toml`
-<span class="ansi-black-intense-fg"> [no changes]</span>
-<span class="ansi-green-intense-fg ansi-bold">  Updating</span> `~/.julia/environments/v1.3/Manifest.toml`
-<span class="ansi-black-intense-fg"> [no changes]</span>
-</pre>
-</div>
-</div>
-</div>
 </div>
 </div>
 
@@ -150,16 +126,6 @@ $$<p>They are useful in image processing for performing fast filtering, compress
 <div class="output_wrapper">
 <div class="output">
 
-<div class="jb_output_wrapper }}">
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>┌ Info: Precompiling FFTW [7a1cc6ca-52ef-59f5-83cd-3a7055c09341]
-└ @ Base loading.jl:1273
-</pre>
-</div>
-</div>
-</div>
 <div class="jb_output_wrapper }}">
 <div class="output_area">
 
