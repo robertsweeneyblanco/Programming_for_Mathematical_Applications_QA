@@ -15,7 +15,7 @@ execute:
 html:
   use_repository_button: true
   use_issues_button: true
-  baseurl: https://robertsweeneyblanco.github.io/Programming_for_Mathematical_Applications_QA/
+  baseurl: https://robertsweeneyblanco.github.io/Programming_for_Mathematical_Applications/
 
 # Interactive environment launch buttons
 launch_buttons:
@@ -25,7 +25,7 @@ launch_buttons:
 
 # Information about where the book repo is hosted
 repository:
-  url: https://github.com/robertsweeneyblanco/Programming_for_Mathematical_Applications_QA
+  url: https://github.com/robertsweeneyblanco/Programming_for_Mathematical_Applications
   path_to_book: textbook  # Path to the book, relative to the repository root
   branch: master
 
